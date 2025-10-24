@@ -291,9 +291,9 @@ p i {
     align-items: center;
     gap: 30px;
     font-size: 50px;
-
     height: 100px;
   }
+  
 
   .social-media a {
     color: #f54a64;
