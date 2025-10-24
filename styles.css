@@ -6,9 +6,18 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    font-size: 35px;
+    padding: 20px;
+}
+
 li a {
     color: white;
-
+    cursor: pointer;
 }
 li a:visited {
     color: white;
@@ -16,6 +25,7 @@ li a:visited {
 li > a:hover {
     color: #f54a64;
 }
+
 
 body {
     background-color: white;
