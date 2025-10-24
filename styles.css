@@ -106,6 +106,13 @@ nav {
     transition: .3s ease;
     
 }
+
+
+.ham-menu:hover {
+    cursor: pointer;
+}
+
+
 .ham-menu span:nth-child(1) {
     top: 25%;
 }
@@ -115,6 +122,8 @@ nav {
 .ham-menu.active span {
     background-color: #e44159;
 }
+
+
 .ham-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
@@ -162,7 +171,7 @@ h4 {
 
 p {
     padding: 10px;
-    color: #c5602e;
+    color: black;
 }
 
 p i {
@@ -205,15 +214,15 @@ p i {
 }
 
 .phone  a:link {
-    color: #c5602e;
+    color: black;;
 }
 
 .email a:link {
-    color: #c5602e;
+    color: black;
 }
 
 .email a:visited {
-    color: #c5602e;
+    color: black;
 }
 
 
