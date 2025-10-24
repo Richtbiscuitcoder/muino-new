@@ -6,13 +6,14 @@
     text-decoration: none;
 }
 
-a {
+li a {
+    color: white;
+
+}
+li a:visited {
     color: white;
 }
-a:visited {
-    color: white;
-}
-a:hover {
+li > a:hover {
     color: #f54a64;
 }
 
@@ -46,16 +47,15 @@ body {
     background-color: #65a045 ;
     height: 100vh;
     width: 100%;
-    max-width: 450px;
+    max-width: 300px;
     position: fixed;
     top: 0;
-    right: -450px;
+    right: -300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;    
+    flex-direction: column;    
     justify-content: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     transition: .3s ease;
     
 }
@@ -73,8 +73,11 @@ nav {
     background-color: #65a045;
     height: 120px;
     text-align: center;
-    
+    position: sticky;
+    border-bottom: 1px solid black;
 }
+
+
 
 .tilde {
     color: #f54a64;
@@ -142,14 +145,32 @@ nav {
 
 
 h2 {
-    padding: 20px;
+    padding: 10px;
     color: #c5602e;
 }
 
-p {
+h3 {
     padding: 20px;
+    color: black;
+}
+
+
+h4 {
+    padding: 20px;
+    color: black;
+}
+
+p {
+    padding: 10px;
     color: #c5602e;
 }
+
+p i {
+    color: #c5602e;
+    font-size: 25px;
+    padding: 5px;   
+}
+
 
 .shop {
     height: 550px;
@@ -160,13 +181,12 @@ p {
 }
 
 
-
-
-
-
-
-
-
+#gallery {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 100vw;
+  }
 
 
 .copyright {
@@ -176,6 +196,25 @@ p {
     color: black;
 }
 
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: baseline;
+    margin-top: 100px;
+}
+
+.phone  a:link {
+    color: #c5602e;
+}
+
+.email a:link {
+    color: #c5602e;
+}
+
+.email a:visited {
+    color: #c5602e;
+}
 
 
 @-webkit-keyframes scroll {
@@ -196,12 +235,7 @@ p {
     }
   }
 
-  #gallery {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 400px;
-    gap: 10px;
-  }
+  
   .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -209,14 +243,15 @@ p {
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 800px;
+    width: 90%;         
+    max-width: 1200px; 
   }
   .slider::before, .slider::after {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 400px;
     position: absolute;
-    width: 100px;
+    width: 50px;
     z-index: 2;
   }
   .slider::after {
@@ -238,4 +273,37 @@ p {
     height: 300px;
     width: 500px;
     margin: 2.5px;
+  }
+
+  .social-media {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 50px;
+
+    height: 100px;
+  }
+
+  .social-media a {
+    color: #f54a64;
+    transition: color 0.3s ease;
+  }
+
+  .social-media a:hover {
+    color: #65a045;
+  }
+
+  footer {
+    background-color: #65a045;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+
+  }
+  
+  p.copyright {
+    color: white;
+    font-size: larger;
   }
