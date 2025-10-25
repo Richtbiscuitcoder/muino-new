@@ -67,11 +67,12 @@ body {
     text-align: center;
     font-size: 2rem;
     transition: .3s ease;
-    
+    font-family: league gothic, sans-serif;
 }
 .off-screen-menu.active {
     right: 0;
     box-shadow: 0px 10px 5px 5px black;
+    font-family: league gothic, sans-serif;
 }
 
 
@@ -171,12 +172,19 @@ h2 {
 h3 {
     padding: 20px;
     color: black;
+    font-family: league gothic, sans-serif;
+    font-size: 50px;
+    color: #c5602e;
+    text-align: center;
 }
 
 
 h4 {
     padding: 20px;
     color: black;
+    font-family: league gothic, sans-serif;
+    font-size: 50px;
+    color: #c5602e;
 }
 
 p {
@@ -202,10 +210,11 @@ p i {
 
 #gallery {
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     height: 400px;
     width: 100vw;
   }
+
 
 
 .copyright {
